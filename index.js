@@ -1,10 +1,11 @@
 const stores = [];
+const priv = new WeakMap();
 
 module.exports.use = (provider) => {
     stores.forEach(store => {
         if (store._provider === provider) return store;
     });
-    let store = require('./lib/store')(this, provider);
+    let store = require('./lib/store')(this, provider, priv);
     stores.push(store);
     return store;
 };
