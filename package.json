@@ -14,5 +14,20 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Thomas Gladdines",
-  "license": "MIT"
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "last 2 versions",
+              "ie >= 7"
+            ]
+          }
+        }
+      ]
+    ]
+  }
 }
