@@ -9,6 +9,6 @@ module.exports.use = function use(provider) {
 module.exports.providers = {
     localStorage: require('./lib/providers/localstorage')
 };
-module.exports.fields = {
-    text: require('./lib/fields/text')
+module.exports.types = {
+    text: require('./lib/types/text')
 };
