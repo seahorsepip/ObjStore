@@ -10,5 +10,5 @@ module.exports.providers = {
     localStorage: require('./lib/providers/localstorage')
 };
 module.exports.types = {
-    text: require('./lib/types/text')
+    any: require('./lib/types/any')
 };
